@@ -1,0 +1,323 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="imagetoolbar" content="no"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>슈퍼북</title>
+	<script>
+	//접속 기기 확인 후 해당 버전으로 
+	   var mobile_keys = new Array('iPhone','iPod','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+	   if(document.URL.match('move_pc_screen')) mobile_keys = null; // URL 파라메타에 'move_pc_screen' 가 포함되어 있을땐 적용안함
+	   for(i in mobile_keys){
+		if(navigator.userAgent.match(mobile_keys[i]) != null){
+		 location.href = "../superbook/mobile/index.html"; // 모바일 홈 연결 주소
+		 break;
+		}
+	   }
+	</script>
+<link rel="stylesheet" href="../superbook/css/default.css">
+<link rel="stylesheet" href="../superbook/css/latest_style.css">
+<link rel="stylesheet" href="../superbook/css/default_board.css">
+<link rel="stylesheet" href="../superbook/css/default_contents.css">
+<link rel="stylesheet" href="../superbook/css/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../superbook/js/jquery.menu.js"></script>
+<script src="../superbook/js/jquery.bxslider.js"></script>
+<script src="../superbook/js/pub.js"></script>
+<script src="../superbook/js/slick.js"></script>
+
+</head>
+
+<style>
+	#container_wr{width:100%}
+	#container{width:100%;}
+</style>
+
+<body>
+
+<!-- 상단 시작 { -->
+<div id ="hd_wrap">
+	<div id="hd">
+		<h1 id="hd_h1">슈퍼북</h1>
+
+		<div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+
+		<div id="tnb">
+			<ul>
+				<li class="tnb_r_logo"><a href="javascript:;"><b>슈퍼북 아카데미 바로가기</b><img src="../superbook/img/tnb_r_logo.png" alt="슈퍼북 아카데미 바로가기"></a></li>
+			</ul>
+
+		</div>
+		<div id="hd_wrapper">
+			<nav class="nav">
+				<h2 class="blind">메인메뉴</h2>
+				<div class="nav__wrap">
+					<div id="logo">
+						<a href="javascript:;"><img src="../superbook/img/logo.png" alt="슈퍼북"></a>
+					</div>
+					<ul class="nav__list">
+											<li class="nav__item">
+							<a href="javascript:;" target="_self" class="nav__link">슈퍼북 소개</a>
+
+						<ul class="nav__list-2dep">
+							<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">인사말</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">소개</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 성경 이야기</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">연혁</a>
+							</li>
+						</ul>
+						</li>
+												<li class="nav__item">
+							<a href="javascript:;" target="_self" class="nav__link">사역 소개</a>
+
+						<ul class="nav__list-2dep">
+							<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 아카데미</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 워크숍</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">역량강화 세미나</a>
+							</li>
+						</ul>
+						</li>
+												<li class="nav__item">
+							<a href="javascript:;" target="_self" class="nav__link">훈련모듈</a>
+
+						<ul class="nav__list-2dep">
+							<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">제자훈련 교실</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">아웃리치 훈련</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">성경적 부모 교실</a>
+							</li>
+						</ul>
+						</li>
+												<li class="nav__item">
+							<a href="javascript:;" target="_self" class="nav__link">게시판</a>
+
+						<ul class="nav__list-2dep">
+							<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">공지사항</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">자주 묻는 질문</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">묻고 답해요</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">기즈모의 보물창고</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">파트너 게시판</a>
+							</li>
+						</ul>
+						</li>
+												<li class="nav__item">
+							<a href="javascript:;" target="_self" class="nav__link">재능기부</a>
+
+						<ul class="nav__list-2dep">
+							<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">자원봉사안내</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">퍼실리테이터</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">앰배서더</a>
+							</li>
+						</ul>
+						</li>
+												<li class="nav__item">
+							<a href="javascript:;" target="_self" class="nav__link">후원</a>
+
+						<ul class="nav__list-2dep">
+							<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">후원안내</a>
+							</li>
+													<li class="nav__item-2dep">
+								<a href="javascript:;" target="_self" class="nav__link-2dep">기부금 영수증 발급</a>
+							</li>
+						</ul>
+						</li>
+											</ul>
+				</div>
+			</nav>
+		</div>
+
+
+	</div>
+</div>
+<!-- } 상단 끝 -->
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+<div id="wrapper">
+	<div id="container_wr">
+		<div id="container">
+
+<div class="main-content__visual">
+
+	<div class="main-banner">
+		<ul id="bnSlider">
+			<li><a href="javascript:;" ><img src="../superbook/img/banner1.jpg" alt="CBN Korea의 소식을 바로바로 Facebook에서 만나보세요"></a></li>
+			<li><a href="javascript:;"  target="_self" ><img src="../superbook/img/banner2.jpg" alt="superbook academy 바로가기"></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="main_b_text">
+	다음 세대의 거룩한 부흥을 꿈꾸는 Superbook 입니다.
+	<span>Together, Raise Up a Holy Generation!</span>
+</div>
+
+
+<div class="main-content__body">
+
+	<div class="main_conbox">
+		<div>
+			<div class="main_box1">
+				<div class="box1_tit"><span>슈퍼북 아카데미</span></div>
+				<div><img src="../superbook/img/main_img1.png" alt="슈퍼북아카데미"></div>
+				<div class="box_txt1">혁신적이고 재미있는 성경 교육 프로그램</div>
+				<div class="box_txt2">애니메이션과 공과로 성경을 바르게 가르칩니다.</div>
+				<div class="box1_btn"><a href="javascript:;">바로가기</a></div>
+			</div>
+
+				<div class="main_box2">
+				<div class="box2_tit"><span>슈퍼북 파트너 협약신청하기</span></div>
+				<div><img src="../superbook/img/main_img2.png" alt="슈퍼북 파트너 협약신청하기"></div>
+				<div class="box_txt1">협약을 통해 사용할 수 있습니다.</div>
+				<div class="box_txt2">슈퍼북 사역에 후원으로 동참해 주시기 바랍니다.</div>
+				<div class="box2_btn"><a href="javascript:;">바로가기</a></div>
+			</div>
+
+			<div class="main_box3">
+				<div class="box3_tit"><span>후원하기</span></div>
+				<div><img src="../superbook/img/main_img3.png" alt="후원하기"></div>
+				<div class="box_txt1">오직 후원으로 운영됩니다.</div>
+				<div class="box_txt2">후원을 통해 교회학교와 선교지를 세워주세요.</div>
+				<div class="box3_btn"><a href="javascript:;">바로가기</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_late">
+		<div class="bbs">
+<div class="lat">
+    <h3 class="b_tit"><a href="javascript:;">공지사항</a></h3>
+    <ul>
+            <li>
+            <a href="javascript:;"> 2019 슈퍼북 소개 브로셔</a> 
+            <span class="lt_date">10-31</span>
+        </li>
+            <li>
+            <a href="javascript:;"> ★[필독]★2019.10.23 사역 재개 - 구조조정 및 개편에…</a> 
+            <span class="lt_date">09-19</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 슈퍼북 아카데미(자료실)변경 내용 안내- 시즌3 갱신 파트너 필…</a> 
+            <span class="lt_date">02-26</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 슈퍼북 아카데미 시즌3 업로드 일정</a> 
+            <span class="lt_date">01-07</span>
+        </li>
+            <li>
+            <a href="javascript:;"> [판매완료] 슈퍼북 크리스마스 패키지 판매 안내!</a> 
+            <span class="lt_date">11-08</span>
+        </li>
+            </ul>
+    <a href="javascript:;" class="lt_more"><span class="sound_only">공지사항</span><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only"> 더보기</span></a>
+
+</div>
+</div>
+		<div class="edu">
+<div class="lat">
+    <h3 class="b_tit"><a href="javascript:;">기즈모의 보물창고</a></h3>
+    <ul>
+            <li>
+            <a href="javascript:;"> 온누리교회 2018 슈퍼북 대림절 예배</a> 
+            <span class="lt_date">01-07</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 온누리교회 2017 슈퍼북 가족예배</a> 
+            <span class="lt_date">11-29</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 슈퍼북 시즌 3 트레일러 영상 대공개!</a> 
+            <span class="lt_date">10-24</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 슈퍼북 뮤직비디오 &lt;고백&gt; by. 오세연</a> 
+            <span class="lt_date">08-02</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 슈퍼북 드라이브 in 부산</a> 
+            <span class="lt_date">06-27</span>
+        </li>
+            </ul>
+    <a href="javascript:;" class="lt_more"><span class="sound_only">기즈모의 보물창고</span><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only"> 더보기</span></a>
+
+</div>
+</div>
+	</div>
+
+	<div class="main_video">
+		<iframe width="854" height="480" src="https://www.youtube-nocookie.com/embed/s_Bb2Z-NYkU?list=PLrTh5VwQP2S7jOHiGI81yTF2VbTS5nitu" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+
+</div>
+
+	</div>
+	</div>
+
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+
+	<div id="ft_wr">
+		<div id="ft_link">
+			<a href="javascript:;">이용약관</a>&nbsp;&nbsp;
+			<a href="javascript:;">개인정보처리방침</a>
+		</div>
+		<div id="ft_catch"><img src="../superbook/img/ft_logo.png" alt="슈퍼북"></div>
+		<div id="ft_wr2">
+			<div id="ft_add">
+				<span>(21633) 인천 남동구 청능대로289번길 73, 유광빌딩 3층 GCC 국제교류센터 (구주소 : 고잔동 632-2)</span>
+				<span>대표자 : 김수라&nbsp;&nbsp;&nbsp;&nbsp;고유번호 : 138-82-73731&nbsp;&nbsp;&nbsp;&nbsp;후원계좌 : 국민 592201-01-648855 씨비엔코리아</span>
+				<span>TEL : 02-6933-0414&nbsp;&nbsp;&nbsp;&nbsp;Fax 02-6008-8089&nbsp;&nbsp;&nbsp;&nbsp;E-mail : cbnk@cbnkorea.org</span>
+			</div>
+			<div id="ft_copy">Copyright &copy; <b>슈퍼북.</b> All rights reserved.</div>
+		</div>
+	</div>
+
+	<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+</div>
+
+
+<!-- } 하단 끝 -->
+
+</body>
+</html>
