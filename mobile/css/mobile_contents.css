@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/*뷰보드 공통 시작*/
+.view_bo_con {font-size:15px; /*margin-top: 30px;*/ line-height:170%;}
+.view_bo_con .part_margin {margin-bottom:20px;}
+.view_bo_con img{max-width:100% !important;}
+.board_top{border:1px solid #ccc; background:#fafafa; padding:10px; text-align:left; margin:10px;}
+img{max-width:100%;}
+
+/*컨텐츠 소제목*/
+.second_hd{font-size: 22px; font-weight: bold; color: #e12d38; margin-bottom:20px;}
+.second_hd span{font-size: 16px;}
+.second_hd_n{font-size: 22px; font-weight: bold; color: #e12d38; }
+
+
+.middle_hd{font-size:18px; font-weight:bold; color:#444444; background:url("/theme/basic/img/f_icon.png") no-repeat 0px 6px; padding:0px 0 13px 20px; margin-top:40px;}
+.middle_hd:first-child {margin-top:0px;}
+
+.middle_hd_1{margin-left:10px; position:relative;}
+.middle_hd_1:before{content:""; width:5px; height:5px; background:#e12d38; position:absolute; left:-10px; top:11px;}
+
+.middle_hd_under{font-size:13px; color:#999999; font-weight:normal;}
+
+.middle_con{padding: 0px 0 5px 19px; font-size:15px; }
+.middle_con ul li:before {content: ''; position: absolute; left: 25px; margin-top: 7px; width: 5px; height: 5px; background: #F7971D;}
+.middle_con_13px{font-size:13px;}
+
+/* 컨텐츠 내용 박스 */
+.conbox1 {width: 100%; padding-bottom:20px; margin-top:40px;}
+.conbox1:first-child{margin-top:0;}
+.conbox2 {width: 100%; padding: 20px; margin-top:40px;}
+.img_center{text-align:center;}
+
+/* 컨텐츠 내용 컬러 */
+.c_red{color: #e12d38;}
+.c_blue{color:#266cac;}
+.next_line{display:block;}
+
+
+
+/* 불릿기호 있음 */
+.bul_icon > ul > li {background: url(/theme/basic/img/bul.png) no-repeat left center; text-indent: 15px; margin: 0px 0px 0px 20px;}
+.bul_icon > ul > li:first-child {margin-top:5px;}
+
+
+/*테이블처럼*/
+.t_r{display:table-row;}
+.t_c{display:table-cell;}
+
+/*진짜테이블*/
+.con_t {border-spacing: 0px; border-collapse: collapse; text-align:center; width:100%;}
+.con_t caption{position:absolute; top:-5000px; left:0; text-indent:-99999px;}
+.con_t table{border-bottom:3px solid #e12d36;}
+.con_t th{background:#E12D36; color:#fff; padding:10px 0;}
+/*
+.con_t th:first-child{width:100px;}
+*/
+.con_t td{border:1px solid #e12d36; text-align:center; padding:15px;}
+.con_t td:first-child{border-left:none;}
+.con_t td:nth-child(3){border-right:none;}
+.t_s{width:100%; overflow-x:scroll;}
+
+/*다운로드버튼*/
+.down_btn {background: #EE6A00; color: #fff; padding: 5px 0px; font-size: 14px; font-weight: 600; text-align: center; border-radius: 5px;}
+.down_btn1{background: #EE6A00; color: #fff; padding: 5px 0px; font-size: 14px; font-weight: 600; text-align: center; border-radius: 5px; display: inline-block;}
+
+/* 신청하기버튼 */
+.con_btn{background: #e12d38; text-align: center; cursor: pointer; border-radius: 30px;}
+.con_btn > a{color:#fff;}
+
+/* alt hidden */
+.alt_hide {overflow: hidden; width: 0px; height: 0px;}
+
+.view_img {text-align:center; margin-top:30px;}
+
+
+
+/*뷰보드 공통 끝*/
+
+
+
+/*이용약관*/
+.level1_1{font-size:20px; font-weight:600; margin-top:40px; margin-bottom:30px;}
+.level1_1:first-child{margin-top:0px;}
+.level1_2{font-size:16px; font-weight:600; margin-top:20px; margin-bottom:10px;}
+.level1_3{text-indent:-18px; padding-left:18px; margin-bottom:5px;}
+.level1_4{text-indent:-18px; padding-left:28px;  margin-bottom:5px;}
+
+/*개인정보처리방침*/
+.level2_1{font-size:16px; font-weight:600; margin-top:30px; margin-bottom:10px;}
+.level2_1:first-child{margin-top:0px;}
+.level2_2{text-indent: -19px; padding-left: 19px;font-weight:600; margin-top:10px; margin-bottom:5px;}
+.level2_2_1{font-weight:600; margin-top:10px; margin-bottom:5px;}
+.level2_3{text-indent:-18px; padding-left:18px; margin-top:10px; margin-bottom:5px;}
+.level2_4{text-indent:-18px; padding-left:28px;  margin-bottom:5px;}
+
+
+/* 슈퍼북소개>인사말 */
+.b01{overflow:hidden;}
+.b01 .intro_wrap .intro_img{margin:0px 0px 20px 0;}
+.b01 .sign{float:right; width:255px;}
+
+/* 슈퍼북소개>역사 */
+.b02 .con_tit{font-size:24px;}
+.b02 .con_tit span{color:#0070C0; font-weight:bold;}
+
+/* 슈퍼북소개>개요 */
+.b02 .conbox1 {width: 100%; padding: 20px; background: #f5f5f5; overflow: hidden; margin-top:40px;}
+.b02 .conbox1:first-child{margin-top:0;}
+.b02_img_left{height: 300px; float: left; margin-right: 3%;}
+.b02_img_left > .left_img1{width:50%; float:left; max-width:100%;}
+.b02 .conbox2 {width: 100%; padding: 20px; background: #fff; overflow: hidden; margin-top:40px;}
+.b02_img_right{margin-top:10px;}
+.b02 .c_blue{font-weight:bold;}
+.b02 .next_line{margin-left:95px;}
+.width_full{width:100%;}
+.b02 .need_box{border-bottom:1px solid #ccc; margin-bottom:20px;}
+.b02 .need_img{display:inline-block;}
+.b02 .need_txt{display:inline-block; text-align:center;}
+.b02 .c_blue{display:inline-block;}
+.b02 .conbox1 img{margin-top:20px; width:100%;}
+
+
+/* 슈퍼북소개>비전미션 */
+.vm_tit{padding: 0 50px; line-height: 40px; background: #790000; display: inline-block; color: #fff; border-radius: 30px; margin-bottom: 20px;}
+.vm_box{width: 100%; background: #f5f5f5; padding: 20px 30px;}
+.vm_tit2{font-size: 35px; font-weight: 900; color: #e12d38; padding: 20px 0; border-bottom: 1px solid #e12d38; display: inline-block;}
+.vm_white{margin:20px 0 30px 0}
+.vm_white:nth-child(4){margin-bottom:20px;}
+
+/* 슈퍼북소개>슈퍼북성경이야기*/
+/*.b03 div:first-child{float:left; width:60%}*/
+.conbox_top{padding:20px 10px 10px; line-height:150%;}
+.b03 dl{margin-bottom:4px;}
+.b03 .season1, .b03 .season2{width:100%;}
+.b03 .season1 dl, .b03 .season2 dl{display:inline-block; width:49%; overflow:hidden;}
+.b03 .season1 dt, .b03 .season2 dt{width:209px; height:215px; overflow:hidden; margin-bottom:-2px;}
+.b03 .season1 dt img, .b03 .season2 dt img{width:100%;}
+.b03 .season1 dd, .b03 .season2 dd{text-align:center; padding:10px 0; background-color:#ccc7c6; font-size:13px;}
+.b03 .season1 .dl_five, .b03 .season2 .dl_five{width:49.3%; overflow:hidden;}
+.b03 .season1 .dl_five dd, .b03 .season2 .dl_five dd{width:100%;}
+
+/* 슈퍼북소개>재정보고 */
+.b05 .c_red{text-align:center; font-weight:600; font-size:18px; margin:50px 0 30px;}
+
+
+/* 사역소개>슈퍼북아카데미>소개및사용 */
+.b11 .middle_hd_1{font-weight:bold; margin-top:30px;font-size: 18px;}
+.b11 .con_t{width:800px;}
+.b11_imgwrap{width:100%; overflow:hidden;}
+.b11_imgwrap > div{float:left; width:33.3%;}
+/*
+.b11_imgwrap2{width:100%; overflow:hidden}
+.b11_imgwrap2 > div{width:50%; float:left;}
+*/
+.b11 .con_btn{width:150px; color:#fff; line-height:35px;margin-bottom: 20px;}
+.b11 table td{padding: 10px 50px;}
+.b11 .b11_imgwrap2 div img{width:100%;}
+.b11 .bottom_btn{width:260px; margin:0 auto;}
+
+.b11 .level1{text-indent:-13px; padding-left:13px;}
+.b11 .level2{text-indent:-12px; padding-left:12px;}
+
+.b11 .pc_v{display:none;}
+.b11 .mo_v{}
+
+/* 사역소개>슈퍼북워크숍 */
+/*
+.b12_imgwrap{width:100%; overflow:hidden;}
+.b12_imgwrap > div{width:50%; float:left; height:113px; overflow:hidden}
+*/
+.b12 .con_btn{width:104px; line-height:35px; margin:0 auto;}
+.b12 .conbox1 img{margin:0 auto}
+.b12 .con_t table{width:100%; border-collapse:collapse;}
+.b12 .table2wrap .con_t{width:600px;}
+.b12 .c_gray{background-color:#F5F3F2; color:#E12D36; border-top:1px solid #E12D36; width: 80px;}
+.b12 .table1wrap th{border-left:none;padding:15px 10px;}
+.b12 .table1wrap td{border-right:none;padding:15px 10px;}
+.b12 .table2wrap td:nth-child(2){background-color:#f5f3f2}
+.b12 .table2wrap td:nth-child(3){text-align:left;}
+.b12 .table3wrap{margin-top:20px; border-top:3px solid #e12d36;}
+.b12 .table3wrap th{background-color:#fff; color:#e12d36; border-top:1px solid #e12d36; border-left:none; width:50px;}
+.b12 .table3wrap td{border-right:none;}
+.b12 .table1wrap table{border-bottom:2px solid #E12D36;}
+.b12 .table2wrap table{border-bottom:2px solid #E12D36;}
+
+.b12 .part_01{font-size: 24px; font-weight: bold; text-align: center; line-height: 120%; padding: 0px 60px; color:#000;}
+.b12 .part_02{font-size:15px; color:#3a3a3a; text-align:center; line-height:120%; padding:30px 0px;}
+.b12 .part_03{display: table; width: 100%; text-align: center;}
+.b12 .part_03 .con_btn{display: table-cell; height: 40px; line-height: 40px; padding: 10px 10px;background:#fff;}
+.b12 .part_03 .con_btn a{background: #e12d38; text-align: center; cursor: pointer; border-radius: 30px; color:#fff; display:block;}
+
+
+
+/* 사역소개>역량강화컨퍼런스 */
+.b13 .con_btn{width:150px; line-height:35px; margin:0 auto;}
+.b13 .con_t{width:500px;}
+.b13 table{border-bottom:2px solid #E12D36;}
+.b13 table th:first-child{width:30%;}
+.b13 table td{border-right:none;}
+.b13 table tr:nth-child(odd){background:#F6F6F6;}
+.b13 table .c_red{font-weight:bold;}
+
+/* 재능기부>자원봉사안내*/
+.b41{overflow:hidden;}
+/*
+.b41 .conbox1{width:60%; display:inline-block; float:left;}
+.b41 .b41_img{width:40%; display:inline-block; margin-top:50px;}
+*/
+.b41 .con_btn{line-height:35px; width:170px; margin:0 auto; margin-top:20px;}
+.b41 .c_red{font-size:22px; font-weight:bold; margin:20px 0}
+
+
+/* 후원>후원안내 */
+.b51 .conbox1{display:inline-block;}
+.b51 .b51_img{display:inline-block;}
+.b51_top{color: rgb(58, 50, 195); font-size: 14pt;}
+.b51_pact{color: rgb(58, 50, 195);}
