@@ -1,358 +1,384 @@
-
 <!doctype html>
 <html lang="ko">
-<head>
-<meta charset="utf-8">
-<!-- <meta http-equiv="imagetoolbar" content="no"> -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>슈퍼북 아카데미 1 페이지 | 슈퍼북</title>
-	<script>
-	//접속 기기 확인 후 해당 버전으로 
-	   var mobile_keys = new Array('iPhone','iPod','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
-	   if(document.URL.match('move_pc_screen')) mobile_keys = null; // URL 파라메타에 'move_pc_screen' 가 포함되어 있을땐 적용안함
-	   for(i in mobile_keys){
-		if(navigator.userAgent.match(mobile_keys[i]) != null){
-		 location.href = "../superbook/mobile/sub01.html"; // 모바일 홈 연결 주소
-		 break;
-		}
-	   }
-	</script>
-<link rel="stylesheet" href="../superbook/css/default.css"> 
-<link rel="stylesheet" href="../superbook/css/default_board.css">
-<link rel="stylesheet" href="../superbook/css/default_contents.css">
-<link rel="stylesheet" href="../superbook/css/slick.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-<script src="../js/jquery-1.8.3.min.js"></script>
-<script src="../superbook/js/jquery.menu.js"></script>
-<script src="../superbook/js/jquery.bxslider.js"></script>
-<script src="../superbook/js/pub.js"></script>
-<script src="../superbook/js/slick.js"></script>
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="imagetoolbar" content="no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>슈퍼북 아카데미 1 페이지 | 슈퍼북</title>
+	<script>
+		//접속 기기 확인 후 해당 버전으로 
+		var mobile_keys = new Array('iPhone', 'iPod', 'Android', 'BlackBerry', 'Windows Phone', 'Windows CE', 'LG', 'MOT',
+			'SAMSUNG', 'SonyEricsson', 'Nokia');
+		if (document.URL.match('move_pc_screen')) mobile_keys = null; // URL 파라메타에 'move_pc_screen' 가 포함되어 있을땐 적용안함
+		for (i in mobile_keys) {
+			if (navigator.userAgent.match(mobile_keys[i]) != null) {
+				location.href = "../superbook/mobile/sub01.html"; // 모바일 홈 연결 주소
+				break;
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="../superbook/css/default.css">
+	<link rel="stylesheet" href="../superbook/css/default_board.css">
+	<link rel="stylesheet" href="../superbook/css/default_contents.css">
+	<link rel="stylesheet" href="../superbook/css/slick.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<script src="../superbook/js/jquery-1.8.3.min.js"></script>
+	<script src="../superbook/js/jquery.menu.js"></script>
+	<script src="../superbook/js/jquery.bxslider.js"></script>
+	<script src="../superbook/js/pub.js"></script>
+	<script src="../superbook/js/slick.js"></script>
 
 </head>
 
 
 <style type="text/css">
-	.view_bo_con img{max-width:850px}
+	.view_bo_con img {
+		max-width: 850px
+	}
 </style>
 
 
 <body>
-<!-- 상단 시작 { -->
-<div id ="hd_wrap">
-	<div id="hd">
-		<h1 id="hd_h1">슈퍼북 아카데미 1 페이지</h1>
+	<!-- 상단 시작 { -->
+	<div id="hd_wrap">
+		<div id="hd">
+			<h1 id="hd_h1">슈퍼북 아카데미 1 페이지</h1>
 
-		<div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+			<div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
 
-		<div id="tnb">
-			<ul>
-				<li class="tnb_r_logo"><a href="javascript:;"  ><b>슈퍼북 아카데미 바로가기</b><img src="../superbook/img/tnb_r_logo.png" alt="슈퍼북 아카데미 바로가기"></a></li>				
-			</ul>
+			<div id="tnb">
+				<ul>
+					<li class="tnb_r_logo"><a href="javascript:;"><b>슈퍼북 아카데미 바로가기</b><img
+								src="../superbook/img/tnb_r_logo.png" alt="슈퍼북 아카데미 바로가기"></a></li>
+				</ul>
 
-		</div>
-		<div id="hd_wrapper">
-			<nav class="nav">
-				<h2 class="blind">메인메뉴</h2>
-				<div class="nav__wrap">
-					<div id="logo">
-						<a href="javascript:;"><img src="../superbook/img/logo.png" alt="슈퍼북"></a>
+			</div>
+			<div id="hd_wrapper">
+				<nav class="nav">
+					<h2 class="blind">메인메뉴</h2>
+					<div class="nav__wrap">
+						<div id="logo">
+							<a href="javascript:;"><img src="../superbook/img/logo.png" alt="슈퍼북"></a>
+						</div>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="javascript:;" target="_self" class="nav__link">슈퍼북 소개</a>
+
+								<ul class="nav__list-2dep">
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">인사말</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">소개</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 성경 이야기</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">연혁</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" target="_self" class="nav__link">사역 소개</a>
+
+								<ul class="nav__list-2dep">
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 아카데미</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 워크숍</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">역량강화 세미나</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" target="_self" class="nav__link">훈련모듈</a>
+
+								<ul class="nav__list-2dep">
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">제자훈련 교실</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">아웃리치 훈련</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">성경적 부모 교실</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" target="_self" class="nav__link">게시판</a>
+
+								<ul class="nav__list-2dep">
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">공지사항</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">자주 묻는 질문</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">묻고 답해요</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">기즈모의 보물창고</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">파트너 게시판</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" target="_self" class="nav__link">재능기부</a>
+
+								<ul class="nav__list-2dep">
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">자원봉사안내</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">퍼실리테이터</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">앰배서더</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="javascript:;" target="_self" class="nav__link">후원</a>
+
+								<ul class="nav__list-2dep">
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">후원안내</a>
+									</li>
+									<li class="nav__item-2dep">
+										<a href="javascript:;" target="_self" class="nav__link-2dep">기부금 영수증 발급</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
-					<ul class="nav__list">
-											<li class="nav__item">
-							<a href="javascript:;" target="_self" class="nav__link">슈퍼북 소개</a>
+				</nav>
+			</div>
 
-						<ul class="nav__list-2dep">
-							<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">인사말</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">소개</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 성경 이야기</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">연혁</a>
-							</li>
-						</ul>
-						</li>
-												<li class="nav__item">
-							<a href="javascript:;" target="_self" class="nav__link">사역 소개</a>
 
-						<ul class="nav__list-2dep">
-							<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 아카데미</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">슈퍼북 워크숍</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">역량강화 세미나</a>
-							</li>
-						</ul>
-						</li>
-												<li class="nav__item">
-							<a href="javascript:;" target="_self" class="nav__link">훈련모듈</a>
-
-						<ul class="nav__list-2dep">
-							<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">제자훈련 교실</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">아웃리치 훈련</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">성경적 부모 교실</a>
-							</li>
-						</ul>
-						</li>
-												<li class="nav__item">
-							<a href="javascript:;" target="_self" class="nav__link">게시판</a>
-
-						<ul class="nav__list-2dep">
-							<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">공지사항</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">자주 묻는 질문</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">묻고 답해요</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">기즈모의 보물창고</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">파트너 게시판</a>
-							</li>
-						</ul>
-						</li>
-												<li class="nav__item">
-							<a href="javascript:;" target="_self" class="nav__link">재능기부</a>
-
-						<ul class="nav__list-2dep">
-							<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">자원봉사안내</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">퍼실리테이터</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">앰배서더</a>
-							</li>
-						</ul>
-						</li>
-												<li class="nav__item">
-							<a href="javascript:;" target="_self" class="nav__link">후원</a>
-
-						<ul class="nav__list-2dep">
-							<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">후원안내</a>
-							</li>
-													<li class="nav__item-2dep">
-								<a href="javascript:;" target="_self" class="nav__link-2dep">기부금 영수증 발급</a>
-							</li>
-						</ul>
-						</li>
-											</ul>
-				</div>
-			</nav>
 		</div>
-
-
 	</div>
-</div>
-<!-- } 상단 끝 -->
-<hr>
+	<!-- } 상단 끝 -->
+	<hr>
 
-<!-- 콘텐츠 시작 { -->
-<div id="wrapper">
-	<div id="container_wr">
-	<!-- 왼쪽 메뉴  시작 -->
-					<div id="aside">
+	<!-- 콘텐츠 시작 { -->
+	<div id="wrapper">
+		<div id="container_wr">
+			<!-- 왼쪽 메뉴  시작 -->
+			<div id="aside">
 				<div class="sub-menu">
 					<div class="sub-menu__tit">
 						<span class="sub-menu_group">사역 소개</span>
-								<ul class="sub-menu__list">
-									<li class="sub-menu__item_on">
-										<a href="javascript:;" target="_self" class="sub-menu_on">슈퍼북 아카데미</a>
-									</li>
-									<li class="sub-menu__item">
-										<a href="javascript:;" target="_self" class="sub-menu">슈퍼북 워크숍</a>
-									</li>
-									<li class="sub-menu__item">
-										<a href="javascript:;" target="_self" class="sub-menu">역량강화 세미나</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+						<ul class="sub-menu__list">
+							<li class="sub-menu__item_on">
+								<a href="javascript:;" target="_self" class="sub-menu_on">슈퍼북 아카데미</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="javascript:;" target="_self" class="sub-menu">슈퍼북 워크숍</a>
+							</li>
+							<li class="sub-menu__item">
+								<a href="javascript:;" target="_self" class="sub-menu">역량강화 세미나</a>
+							</li>
+						</ul>
 					</div>
+				</div>
+			</div>
 			<!-- 왼쪽 메뉴 끝 -->
-	<!-- 랜드마크 시작 -->
-					<div class="sub_landmark">
+			<!-- 랜드마크 시작 -->
+			<div class="sub_landmark">
 				<span><img src="../superbook/img/home.png" alt="home" width="14" height="13"></span>
 				<span>&nbsp;>&nbsp;</span>
 				<span>사역 소개</span>
 				<span>&nbsp;>&nbsp;</span>
-				<strong  class="landmark_b">슈퍼북 아카데미</strong>
+				<strong class="landmark_b">슈퍼북 아카데미</strong>
 			</div>
-		
-	<!-- 랜드마크 끝 -->
-		<div id="container">
+
+			<!-- 랜드마크 끝 -->
+			<div id="container">
 				<div id="con_wrap">
 					<h2 id="container_title"><span>슈퍼북 아카데미</span></h2>
 				</div>
 
-<article id="bo_v" style="width:100%">
+				<article id="bo_v" style="width:100%">
 
-	<!-- 게시판 목록 시작 { -->
+					<!-- 게시판 목록 시작 { -->
 
-		<div class='view_bo_con b11'><div class="conbox1">
-	<div class="second_hd">슈퍼북 아카데미 <span>(자료실- https://superbookacademy.kr/)</span></div>
-	<div class="part_margin">슈퍼북 아카데미는 창세기부터 요한계시록에 이르는 성경 이야기를 예수 그리스도 중심으로 접근하여 한 시즌당 13개의 성경 이야기가 총 시즌 5까지 제공되는 성경공부 프로그램입니다.</div>
-	<div>다음세대인 6-13세 아이들에게 말씀을 깊이 있고 올바르게 전하고자 하는 교회 및 단체라면 누구든지 사용할 수 있습니다. 아이들의 시선을 사로잡는 재미있는 성경 이야기와 깊이 있는 공과 구성으로 말씀의 이해를 넘어 아이들이 겪는 삶의 갈등 가운데 실질적으로 적용할 수 있도록 구성되어 있습니다. 현대적인 교훈을 접목하여 교회학교, 제자훈련, 미션스쿨, 가정 예배 외 다양한 방식으로 활용할 수 있습니다.</div>
-</div>
+					<div class='view_bo_con b11'>
+						<div class="conbox1">
+							<div class="second_hd">슈퍼북 아카데미 <span>(자료실- https://superbookacademy.kr/)</span></div>
+							<div class="part_margin">슈퍼북 아카데미는 창세기부터 요한계시록에 이르는 성경 이야기를 예수 그리스도 중심으로 접근하여 한 시즌당 13개의 성경
+								이야기가 총 시즌 5까지 제공되는 성경공부 프로그램입니다.</div>
+							<div>다음세대인 6-13세 아이들에게 말씀을 깊이 있고 올바르게 전하고자 하는 교회 및 단체라면 누구든지 사용할 수 있습니다. 아이들의 시선을 사로잡는 재미있는
+								성경 이야기와 깊이 있는 공과 구성으로 말씀의 이해를 넘어 아이들이 겪는 삶의 갈등 가운데 실질적으로 적용할 수 있도록 구성되어 있습니다. 현대적인 교훈을
+								접목하여 교회학교, 제자훈련, 미션스쿨, 가정 예배 외 다양한 방식으로 활용할 수 있습니다.</div>
+						</div>
 
-<div class="pc_v">
-	<iframe width="850" height="480" src="https://www.youtube.com/embed/nLuu9LwSFVQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</div>
-<div class="mo_v">
-	<iframe width="auto" height="260" src="https://www.youtube.com/embed/nLuu9LwSFVQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</div>
+						<div class="pc_v">
+							<iframe width="850" height="480" src="https://www.youtube.com/embed/nLuu9LwSFVQ"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen=""></iframe>
+						</div>
+						<div class="mo_v">
+							<iframe width="auto" height="260" src="https://www.youtube.com/embed/nLuu9LwSFVQ"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen=""></iframe>
+						</div>
 
-<div class="conbox1">
-	<div class="second_hd">슈퍼북 아카데미 커리큘럼</div>
-	<div class="part_margin">각 에피소드마다 3주 분량의 심화 과정으로 진행됩니다.</div>
-	<div class="t_s">
-		<table class="con_t part_margin">
-			<caption>슈퍼북 아카데미 커리큘럼 표입니다</caption>
-			<tbody>
-			<tr>
-				<th>시즌 1 - 5</th>
-			</tr>
-			<tr>
-				<td style="border-right:0">
-				13개의 에피소드(각 3주)&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;전도용 프로그램(1주)&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;40주
-				</td>
-			</tr>
-			</tbody>
-		</table>
-		<table class="con_t">
-			<caption>슈퍼북 아카데미 커리큘럼 표입니다</caption>
-			<tbody>
-			<tr>
-				<th>레슨1 (1주차)</th>
-				<th>레슨2 (2주차)</th>
-				<th>레슨3 (3주차)</th>
-			</tr>
-			<tr>
-				<td>
-				크리스와 조이의 딜레마 영상<br>
-				<b class="c_red">성경 이야기 영상(약20-25분)</b><br>
-				딜레마 해결 영상<br>
-				슈퍼구절 영상<br>
-				<b class="c_red">레슨1 교사 가이드</b>
-				</td>
-				<td>
-					성경이야기 요약 영상<br><b class="c_red">*성경 배경설명 영상(약5-6분)</b><br>
-					슈퍼구절 영상<br>
-					<b class="c_red">레슨2 교사 가이드</b>
-				</td>
-				<td>
-					성경 이야기 요약 영상<br><b class="c_red">*길잡이 영상(약2-3분)</b><br>
-					슈퍼구절 영상<br>
-					<b class="c_red">레슨3 교사 가이드</b>
-				</td>
-			</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="c_red level1">* 성경 배경설명 영상 : 성경 이야기의 고고학적, 역사학적, 지리학적 배경을 알려주는 영상입니다.</div>
-	<div class="c_red level1">* 길잡이 영상 : 성경 이야기와 예수그리스도와의 연결성 및 성경적 예언을 완성해 가는 과정을 알려주는 영상입니다.</div>
-</div>
+						<div class="conbox1">
+							<div class="second_hd">슈퍼북 아카데미 커리큘럼</div>
+							<div class="part_margin">각 에피소드마다 3주 분량의 심화 과정으로 진행됩니다.</div>
+							<div class="t_s">
+								<table class="con_t part_margin">
+									<caption>슈퍼북 아카데미 커리큘럼 표입니다</caption>
+									<tbody>
+										<tr>
+											<th>시즌 1 - 5</th>
+										</tr>
+										<tr>
+											<td style="border-right:0">
+												13개의 에피소드(각 3주)&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;전도용
+												프로그램(1주)&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;40주
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="con_t">
+									<caption>슈퍼북 아카데미 커리큘럼 표입니다</caption>
+									<tbody>
+										<tr>
+											<th>레슨1 (1주차)</th>
+											<th>레슨2 (2주차)</th>
+											<th>레슨3 (3주차)</th>
+										</tr>
+										<tr>
+											<td>
+												크리스와 조이의 딜레마 영상<br>
+												<b class="c_red">성경 이야기 영상(약20-25분)</b><br>
+												딜레마 해결 영상<br>
+												슈퍼구절 영상<br>
+												<b class="c_red">레슨1 교사 가이드</b>
+											</td>
+											<td>
+												성경이야기 요약 영상<br><b class="c_red">*성경 배경설명 영상(약5-6분)</b><br>
+												슈퍼구절 영상<br>
+												<b class="c_red">레슨2 교사 가이드</b>
+											</td>
+											<td>
+												성경 이야기 요약 영상<br><b class="c_red">*길잡이 영상(약2-3분)</b><br>
+												슈퍼구절 영상<br>
+												<b class="c_red">레슨3 교사 가이드</b>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="c_red level1">* 성경 배경설명 영상 : 성경 이야기의 고고학적, 역사학적, 지리학적 배경을 알려주는 영상입니다.</div>
+							<div class="c_red level1">* 길잡이 영상 : 성경 이야기와 예수그리스도와의 연결성 및 성경적 예언을 완성해 가는 과정을 알려주는 영상입니다.
+							</div>
+						</div>
 
-<div class="conbox1">
-	<div class="second_hd">기본 구성</div>
-	<div class="middle_hd_1">교사 가이드</div>
-	<div class="part_margin">매주 제공되는 교사용 교재입니다. (어린이용 공과 교재는 따로 제공되지 않습니다.)
-	<div class="level2" style="font-size:13px;"><span style="color: rgb(255, 0, 0);">* 문서자료 및 학생용 활동자료는 PDF 형태로 다운로드 및 출력이 가능합니다.</span></div></div>
-	<div class="b11_imgwrap">
-		<div><img alt="교사가이드 1" src="../superbook/img/guide1.jpg"></div>
-		<div><img alt="교사가이드 2" src="../superbook/img/guide2.jpg"></div>
-		<div><img alt="교사가이드 3" src="../superbook/img/guide3.jpg"></div>
-	</div>
+						<div class="conbox1">
+							<div class="second_hd">기본 구성</div>
+							<div class="middle_hd_1">교사 가이드</div>
+							<div class="part_margin">매주 제공되는 교사용 교재입니다. (어린이용 공과 교재는 따로 제공되지 않습니다.)
+								<div class="level2" style="font-size:13px;"><span style="color: rgb(255, 0, 0);">* 문서자료
+										및 학생용 활동자료는 PDF 형태로 다운로드 및 출력이 가능합니다.</span></div>
+							</div>
+							<div class="b11_imgwrap">
+								<div><img alt="교사가이드 1" src="../superbook/img/guide1.jpg"></div>
+								<div><img alt="교사가이드 2" src="../superbook/img/guide2.jpg"></div>
+								<div><img alt="교사가이드 3" src="../superbook/img/guide3.jpg"></div>
+							</div>
 
-	<div class="middle_hd_1">슈퍼북 영상</div>
-	<div>각 주마다 메인 영상을 포함하여, 분할 제공됩니다. (상단 슈퍼북 아카데미 커리큘럼 참조)</div>
-	<div class="level2" style="font-size:13px;"><span style="color: rgb(255, 0, 0);">* 영상은 실시간 스트리밍으로 시청할 수 있으며 다운로드 및 복제는 불가합니다.</span></div>
-	<div><img alt="슈퍼북 DVD이미지" src="../superbook/img/dvd.jpg"></div>
-</div>
+							<div class="middle_hd_1">슈퍼북 영상</div>
+							<div>각 주마다 메인 영상을 포함하여, 분할 제공됩니다. (상단 슈퍼북 아카데미 커리큘럼 참조)</div>
+							<div class="level2" style="font-size:13px;"><span style="color: rgb(255, 0, 0);">* 영상은 실시간
+									스트리밍으로 시청할 수 있으며 다운로드 및 복제는 불가합니다.</span></div>
+							<div><img alt="슈퍼북 DVD이미지" src="../superbook/img/dvd.jpg"></div>
+						</div>
 
-<div class="conbox1">
-	<div class="second_hd">추가 자료</div>
-	
-	<div class="middle_hd_1">교사 튜토리얼</div>
-	<div class="part_margin">교사 가이드의 이해를 돕고 시즌2 부터는 개편되어 지원 예정입니다.</div>
-	<div class="b11_imgwrap2">
-		<div><img alt="튜토리얼 이미지" src="../superbook/img/tutorial1.png"></div>
-		<div><img alt="튜토리얼 이미지" src="../superbook/img/tutorial2.jpg"></div>
-	</div>
-	<div class="middle_hd_1">악보 및 음원</div>
-	<div class="part_margin">아카데미 활동 내 사용되는 슈퍼북 찬양을 한국어로 번안한 음원과 악보를 제공합니다.</div>
-	<div>
-		<div><img src="../superbook/img/music.png" alt="악보 및 음원"></div>
-	</div>
-	<div class="middle_hd_1">How-To 영상</div>
-	<div class="part_margin">각 주차 별, 이해가 어려운 활동을 선정하고 시연하여 교사들의 이해를 돕기 위하여 제공됩니다.</div><div class="part_margin"><img src="../superbook/img/how-to.png" alt="How-To 영상"><br style="clear:both;"><br></div>
-</div>
+						<div class="conbox1">
+							<div class="second_hd">추가 자료</div>
 
-<div class="conbox1">
-	<div class="part_margin"><img src="../superbook/img/step.jpg" alt="슈퍼북 파트너협약 체결단계"></div>
-	<div class="part_margin" style="text-align:center;margin-top:40px;">슈퍼북 사용을 희망하는 교회는 “슈퍼북 파트너 협약”을 통해 해당 시즌의 모든 콘텐츠를 사용할 수 있습니다.</div>
-	<div class="con_btn bottom_btn"><a href="javascript:;">슈퍼북 파트너 협약</a></div>
+							<div class="middle_hd_1">교사 튜토리얼</div>
+							<div class="part_margin">교사 가이드의 이해를 돕고 시즌2 부터는 개편되어 지원 예정입니다.</div>
+							<div class="b11_imgwrap2">
+								<div><img alt="튜토리얼 이미지" src="../superbook/img/tutorial1.png"></div>
+								<div><img alt="튜토리얼 이미지" src="../superbook/img/tutorial2.jpg"></div>
+							</div>
+							<div class="middle_hd_1">악보 및 음원</div>
+							<div class="part_margin">아카데미 활동 내 사용되는 슈퍼북 찬양을 한국어로 번안한 음원과 악보를 제공합니다.</div>
+							<div>
+								<div><img src="../superbook/img/music.png" alt="악보 및 음원"></div>
+							</div>
+							<div class="middle_hd_1">How-To 영상</div>
+							<div class="part_margin">각 주차 별, 이해가 어려운 활동을 선정하고 시연하여 교사들의 이해를 돕기 위하여 제공됩니다.</div>
+							<div class="part_margin"><img src="../superbook/img/how-to.png" alt="How-To 영상"><br
+									style="clear:both;"><br></div>
+						</div>
 
-</div><div style="clear:both;">&nbsp;</div></div>
+						<div class="conbox1">
+							<div class="part_margin"><img src="../superbook/img/step.jpg" alt="슈퍼북 파트너협약 체결단계"></div>
+							<div class="part_margin" style="text-align:center;margin-top:40px;">슈퍼북 사용을 희망하는 교회는 “슈퍼북
+								파트너 협약”을 통해 해당 시즌의 모든 콘텐츠를 사용할 수 있습니다.</div>
+							<div class="con_btn bottom_btn"><a href="javascript:;">슈퍼북 파트너 협약</a></div>
 
-		
+						</div>
+						<div style="clear:both;">&nbsp;</div>
+					</div>
 
 
-</article>
 
-	</div>
-	</div>
 
-</div>
-<!-- } 콘텐츠 끝 -->
+				</article>
 
-<hr>
-
-<!-- 하단 시작 { -->
-<div id="ft">
-
-	<div id="ft_wr">
-		<div id="ft_link">
-			<a href="javascript:;">이용약관</a>&nbsp;&nbsp;
-			<a href="javascript:;">개인정보처리방침</a>
-		</div>
-		<div id="ft_catch"><img src="../superbook/img/ft_logo.png" alt="슈퍼북"></div>
-		<div id="ft_wr2">
-			<div id="ft_add">
-				<span>(21633) 인천 남동구 청능대로289번길 73, 유광빌딩 3층 GCC 국제교류센터 (구주소 : 고잔동 632-2)</span>
-				<span>대표자 : 김수라&nbsp;&nbsp;&nbsp;&nbsp;고유번호 : 138-82-73731&nbsp;&nbsp;&nbsp;&nbsp;후원계좌 : 국민 592201-01-648855 씨비엔코리아</span>
-				<span>TEL : 02-6933-0414&nbsp;&nbsp;&nbsp;&nbsp;Fax 02-6008-8089&nbsp;&nbsp;&nbsp;&nbsp;E-mail : cbnk@cbnkorea.org</span>
 			</div>
-			<div id="ft_copy">Copyright &copy; <b>슈퍼북.</b> All rights reserved.</div>
 		</div>
+
+	</div>
+	<!-- } 콘텐츠 끝 -->
+
+	<hr>
+
+	<!-- 하단 시작 { -->
+	<div id="ft">
+
+		<div id="ft_wr">
+			<div id="ft_link">
+				<a href="javascript:;">이용약관</a>&nbsp;&nbsp;
+				<a href="javascript:;">개인정보처리방침</a>
+			</div>
+			<div id="ft_catch"><img src="../superbook/img/ft_logo.png" alt="슈퍼북"></div>
+			<div id="ft_wr2">
+				<div id="ft_add">
+					<span>(21633) 인천 남동구 청능대로289번길 73, 유광빌딩 3층 GCC 국제교류센터 (구주소 : 고잔동 632-2)</span>
+					<span>대표자 : 김수라&nbsp;&nbsp;&nbsp;&nbsp;고유번호 : 138-82-73731&nbsp;&nbsp;&nbsp;&nbsp;후원계좌 : 국민
+						592201-01-648855 씨비엔코리아</span>
+					<span>TEL : 02-6933-0414&nbsp;&nbsp;&nbsp;&nbsp;Fax 02-6008-8089&nbsp;&nbsp;&nbsp;&nbsp;E-mail :
+						cbnk@cbnkorea.org</span>
+				</div>
+				<div id="ft_copy">Copyright &copy; <b>슈퍼북.</b> All rights reserved.</div>
+			</div>
+		</div>
+
+		<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span
+				class="sound_only">상단으로</span></button>
 	</div>
 
-	<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
-</div>
 
 
 
-
-<!-- } 하단 끝 -->
+	<!-- } 하단 끝 -->
 
 </body>
+
 </html>
